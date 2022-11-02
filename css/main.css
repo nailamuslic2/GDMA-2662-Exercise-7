@@ -41,6 +41,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1rem;
+}
+
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
@@ -48,13 +52,13 @@
 /* ----- TYPOGRAPHY ----- */
 
 h1 {
-    font-size: 75px;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -64,11 +68,6 @@ h2 {
 
 /* ----- FRAMEWORK ----- */
 
-.wrapper {
-    width: 95%;
-    margin: 0 auto;
-}
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -77,11 +76,23 @@ h2 {
 [class*='col-'] div {
     background-color: #D9D9D9;
     padding: 5px;
-    height: 200px;
+    height: 100%;
 }
 
 [class*='col-'] {
     padding: 5px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+
+/* ----- SM DISPLAY ----- */
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .col-sm-1 {
@@ -132,8 +143,14 @@ h2 {
     width: calc(100% * 12 / 12);
 }
 
+/* ----- MD DISPLAY ----- */
+
 @media only screen and (min-width: 768px) {
 
+     html {
+        font-size: 17px;
+     }
+    
     .wrapper {
         width: 85%;
         margin: 0 auto;
@@ -188,8 +205,14 @@ h2 {
     }
 }
 
+/* ----- LG DISPLAY ----- */
+
 @media only screen and (min-width: 1024px) {
 
+    html {
+        font-size: 15px;
+    }
+   
     .wrapper {
         width: 75%;
         margin: 0 auto;
@@ -243,11 +266,6 @@ h2 {
         width: calc(100% * 12 / 12);
     }
 }
-
-.img-responsive {
-    max-width: 100%;
-}
-
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
