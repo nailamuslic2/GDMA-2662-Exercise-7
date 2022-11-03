@@ -3,8 +3,6 @@
 /*--------------------------------------------------------------
     TABLE OF CONTENTS: these sections are by selector and not the css styling.
 ----------------------------------------------------------------
-1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
-2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. (boxsetting, html selector, body selector)
         - Universal
 4.0 - Elements: styling for bare/generic HTML elements (just h1, etc, p, ul,) (make subsections for tables and forms, etc) (no classes or IDs, but you can use direct descendant and first child as long as no classes etc) (img would have the media subhead; Headings, Paragraphs, Blockquotes, Anchors, table, form, image, content)
@@ -17,12 +15,7 @@
         - Buttons 
         - Related Articles
         - Footer
-7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class (ex: if we want all the buttons to look the same)
-        - Screen Reader
-        - Color	    
 --------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
     3.0 - GENERIC
@@ -75,12 +68,12 @@ h2 {
 
 [class*='col-'] div {
     background-color: #D9D9D9;
-    padding: 5px;
+    padding: 10px;
     height: 100%;
 }
 
 [class*='col-'] {
-    padding: 5px;
+    padding: 10px;
 }
 
 .img-responsive {
