@@ -7,14 +7,12 @@
         - Universal
 4.0 - Elements: styling for bare/generic HTML elements (just h1, etc, p, ul,) (make subsections for tables and forms, etc) (no classes or IDs, but you can use direct descendant and first child as long as no classes etc) (img would have the media subhead; Headings, Paragraphs, Blockquotes, Anchors, table, form, image, content)
         - Typography
-        - Lists
-        - Anchor
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks (classes and IDs)
         - Framework
+        - SM display
+        - MD display
+        - LG display
 6.0 - Components: specific designed components (modular widgets that visually look the same but have one difference)
-        - Buttons 
-        - Related Articles
-        - Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
